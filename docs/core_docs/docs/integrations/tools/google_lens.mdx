@@ -1,0 +1,31 @@
+---
+hide_table_of_contents: true
+---
+
+import CodeBlock from "@theme/CodeBlock";
+
+# Google Lens Tool
+
+The Google Lens Tool allows your agent to utilize the Google Lens API to fetch information from images, such as identifying subjects, related images, and links.
+
+## Setup
+
+You will need to sign up for a [SerpApi account](https://serpapi.com/users/sign_up) and get an API key. Then set your API key as `process.env.SERPAPI_API_KEY` or pass it as an `apiKey` constructor argument.
+
+## Usage
+
+import IntegrationInstallTooltip from "@mdx_components/integration_install_tooltip.mdx";
+
+<IntegrationInstallTooltip></IntegrationInstallTooltip>
+
+```bash npm2yarn
+npm install @langchain/openai @langchain/community @langchain/core
+```
+
+import ToolExample from "@examples/tools/google_lens.ts";
+
+<CodeBlock language="typescript">{ToolExample}</CodeBlock>
+
+## Related
+Tool [conceptual guide](https://github.com/docs/concepts/tools)  
+Tool [how-to guides](https://github.com/docs/how_to/#tools)
